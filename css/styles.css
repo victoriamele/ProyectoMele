@@ -1,0 +1,230 @@
+/*---------------------------resetear CSS---------------------------*/
+* {
+    Margin: 0;
+    padding: 0;
+}
+
+/*---------------------------plantilla de color---------------------------*/
+.DUNESCAPES-1-hex {
+    color: #5F5173;
+}
+
+.DUNESCAPES-2-hex {
+    color: #DED0F2;
+}
+
+.DUNESCAPES-3-hex {
+    color: #5E5BA6;
+}
+
+.DUNESCAPES-4-hex {
+    color: #272F59;
+}
+
+.DUNESCAPES-5-hex {
+    color: #9AA3D9;
+}
+
+/*---------------------------link a tipografia---------------------------*/
+@font-face {
+    font-family: "Rochestar";
+    src: url(../fonts/Rochestar.otf);
+}
+
+/*---------------------------estilo general---------------------------*/
+
+body {
+    background-color: #272f59;
+    font-family: 'Jost, sans-serif';
+    font-size: 20px;
+    color: #DED0F2;
+    text-align: justify;
+    overflow-x: hidden;
+}
+
+h2,
+h3 {
+    font-weight: bold;
+    font-style: italic;
+    margin: 5px;
+}
+
+p {
+    padding: 1%;
+}
+
+.imagen {
+    width: 100%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #DED0F2;
+    font-family: 'Jost';
+    font-size: 18px;
+    padding: 12px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.navbar a:hover {
+    background-color: #DED0F2;
+    color: #272F59;
+}
+
+.navbarActive {
+    background-color: rgba(39, 47, 89, 0.5);
+}
+
+/*---------------------------grilla mobile-first---------------------------*/
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 2px 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "middle"
+        "right"
+        "left"
+        "footer";
+}
+
+.footer {
+    grid-area: footer;
+    color: rgb(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    font-family: 'Rochestar';
+    font-size: 120%;
+    background-color: #5e5ba6;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: #5E5BA6;
+    font-size: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.middle {
+    grid-area: middle;
+}
+
+.right {
+    grid-area: right;
+}
+
+.left {
+    grid-area: left;
+}
+
+.left,
+.middle,
+.right {
+    margin: 5px;
+    padding: 15px;
+}
+
+/*---------------------------css especifico a integrantes.html---------------------------*/
+
+.card__image {
+    width: 100%;
+    height: 70%;
+}
+
+.card__title {
+    text-align: center;
+}
+
+.card__subtitle {
+    text-align: center;
+    font-style: italic;
+    text-decoration: overline;
+    margin-top: 5px;
+}
+
+.card__content {
+    text-align: justify;
+}
+
+/*---------------------------css especifico a discografia.html---------------------------*/
+
+.tabla {
+    border: 1px solid;
+    text-align: center;
+    width: 100%;
+}
+
+.tabla__caption {
+    font-style: italic;
+    font-size: smaller;
+    caption-side: bottom;
+}
+
+.tabla__titulo {
+    font-weight: bold;
+}
+
+.tabla__cuerpo {
+    background-color: rgba(95, 81, 115, 0.3);
+}
+
+/*---------------------------css especifico a contacto.html---------------------------*/
+
+input[type=text],
+input[type=email],
+input[type=checkbox],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #DED0F2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=submit],
+input[type=reset] {
+    background-color: #272F59;
+    color: #f3ebfd;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formulario {
+    border-radius: 5px;
+    background-color: rgba(222, 208, 242, 0.1);
+    padding: 20px;
+}
+
+/*---------------------------vista desktop---------------------------*/
+@media only screen and (min-width: 961px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 1fr auto;
+        gap: 2px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header navbar navbar"
+            "left middle right"
+            "footer footer footer";
+    }
+}

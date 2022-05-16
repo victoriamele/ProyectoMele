@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <title>Exilio</title>
+</head>
+
+<body class="container">
+    <header class="header">
+        <h1 class="header__logo">Exilio Purpura</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="../index.html">Inicio</a>
+        <a href="./historia.html">Historia</a>
+        <a href="./integrantes.html">Integrantes</a>
+        <a href="./discografia.html">Discografia</a>
+        <a class="navbarActive" href="./contacto.html">Contacto</a>
+    </nav>
+
+    <main class="middle">
+        <form class="formulario">
+            <label for="fname">Nombre</label>
+            <input type="text" id="fname" name="firstname" placeholder="Tu nombre...">
+
+            <label for="lname">Apellido</label>
+            <input type="text" id="lname" name="lastname" placeholder="Tu apellido...">
+
+            <label for="subject">Asunto</label>
+            <textarea id="subject" name="subject" placeholder="Escribe algo.." style="height:200px"></textarea>
+
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_email">
+
+            <div class="formulario__checkbox">Desea subscribirse al newsletter:</div>
+            <input type="checkbox" name="acepta" value="1" />
+
+            <input type="reset" value="Limpiar formulario">
+            <input type="submit" value="Enviar formulario">
+        </form>
+    </main>
+
+    <section class="right">
+        <h3>Links de Interes</h3>
+        <ul class="links">
+            <li>
+                <a target="_blank" 
+                    href="https://www.youtube.com/channel/UCtdgqa4IMAC_9HPvf-6AwRw">
+                        Youtube</a>
+            </li>
+            <li>
+                <a target="_blank"
+                    href="https://open.spotify.com/artist/5fmlC9zY8O3OzdurbjlW2M?si=Y0ALem8aTkO89b7d5zKH5w&nd=1">
+                        Spotify</a>
+            </li>
+        </ul>
+    </section>
+
+    <aside class="left">
+        <img src="../img/Logo.png" class="imagen" alt="Logo">
+    </aside>
+
+    <footer class="footer">
+        <address>
+            Puede encontrar al autor de la pagina en <a target="_blank" href="https://www.instagram.com/vickymele_/">
+                instagram</a>.<br>
+            Ante cualquier consulta, por favor dirigase al <a target="_blank" href="mailto:ma.victoria.mele@gmail.com">
+                inbox</a>.<br>
+        </address>
+    </footer>
+</body>
