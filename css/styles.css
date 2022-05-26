@@ -60,8 +60,10 @@ body {
     overflow-x: hidden;
 }
 
-.header__logo {    
-    animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.2s both; 
+.header__logo {
+    animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.2s both;
+    font-family: 'Rochestar';
+    text-shadow: 2px 2px 4px #272F59;
 }
 
 h2,
@@ -78,6 +80,7 @@ p {
 .imagen {
     max-width: 100%;
     height: auto;
+    margin: 10%;
 }
 
 .navbar a {
@@ -99,31 +102,11 @@ p {
     background-color: rgba(39, 47, 89, 0.5);
 }
 
-/*---------------------------grilla mobile-first---------------------------*/
-.container {
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    gap: 2px 2px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "header"
-        "navbar"
-        "middle"
-        "right"
-        "left"
-        "footer";
-}
-
 .footer {
-    grid-area: footer;
     color: rgb(255, 255, 255, 0.5);
-    text-align: center;
 }
 
 .header {
-    grid-area: header;
     font-family: 'Rochestar';
     text-shadow: 2px 2px 4px #272F59;
     font-size: 120%;
@@ -134,7 +117,6 @@ p {
 }
 
 .navbar {
-    grid-area: navbar;
     background-color: #5E5BA6;
     text-shadow: 2px 2px 4px #272F59;
     font-size: 100%;
@@ -143,30 +125,11 @@ p {
     align-items: center;
 }
 
-.middle {
-    grid-area: middle;
-}
-
-.right {
-    grid-area: right;
-}
-
-.left {
-    grid-area: left;
-}
-
-.left,
-.middle,
-.right {
-    margin: 5px;
-    padding: 15px;
-}
-
 /*---------------------------css especifico a integrantes.html---------------------------*/
 
 .card__image {
     width: 100%;
-    height: 70%;
+    height: 50%;
 }
 
 .card__title {
@@ -241,52 +204,26 @@ input[type=reset] {
 
 .links {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     list-style: none;
 }
 
-.fa {
+.links a {
     padding: 20px;
-    font-size: 30px;
     width: 30px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
+    font-family: 'Jost, sans-serif';
+    font-size: 20px;
+    color: #DED0F2;
 }
 
-.fa:hover {
+.links a:hover {
     opacity: 0.7;
 }
 
-.fa-youtube {
-    background: #bb0000;
-    color: white;
-}
 
-.fa-instagram {
-    background: #125688;
-    color: white;
-}
-
-.fa-spotify {
-    background: #1DB954;
-    color: white;
-}
-
-/*---------------------------vista desktop---------------------------*/
-@media only screen and (min-width: 961px) {
-    .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto 1fr auto;
-        gap: 2px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "header navbar navbar"
-            "left middle right"
-            "footer footer footer";
-    }
-}

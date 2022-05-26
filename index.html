@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Exilio</title>
 </head>
 
-<body class="container">
-    <header class="header">
+<body class="d-flex flex-column min-vh-100">
+    <header class="container-fluid">
         <h1 class="header__logo">Exilio Purpura</h1>
     </header>
 
@@ -25,47 +27,64 @@
         <a href="./pages/contacto.html">Contacto</a>
     </nav>
 
-    <main class="middle">
-        <h2>Inicio</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Velit scelerisque in dictum
-            non consectetur a erat. Ornare suspendisse sed nisi lacus sed viverra tellus in. Sed blandit libero volutpat
-            sed cras ornare arcu. Pretium quam vulputate dignissim suspendisse in est. Tempus urna et pharetra pharetra
-            massa massa ultricies. Feugiat nisl pretium fusce id velit ut tortor pretium viverra. Vel orci porta non
-            pulvinar neque laoreet suspendisse interdum consectetur. Porta non pulvinar neque laoreet suspendisse
-            interdum. Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Ipsum dolor sit amet consectetur.
-            Ornare lectus sit amet est. Id diam vel quam elementum pulvinar etiam non quam. Cursus euismod quis viverra
-            nibh cras. Massa enim nec dui nunc.</p>
-        <p>Eget nunc scelerisque viverra mauris in aliquam sem. Urna id volutpat lacus laoreet. Imperdiet massa
-            tincidunt nunc pulvinar sapien et. Ornare arcu odio ut sem. Sit amet facilisis magna etiam tempor orci eu
-            lobortis. Et malesuada fames ac turpis egestas sed tempus. Gravida quis blandit turpis cursus in hac
-            habitasse platea. At imperdiet dui accumsan sit amet nulla facilisi. Sed id semper risus in hendrerit.
-            Sapien eget mi proin sed libero enim sed faucibus.</p>
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Inicio</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore
+                        magna aliqua. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. Velit
+                        scelerisque in dictum
+                        non consectetur a erat. Ornare suspendisse sed nisi lacus sed viverra tellus in. Sed blandit
+                        libero volutpat
+                        sed cras ornare arcu. Pretium quam vulputate dignissim suspendisse in est. Tempus urna et
+                        pharetra pharetra
+                        massa massa ultricies. Feugiat nisl pretium fusce id velit ut tortor pretium viverra. Vel orci
+                        porta non
+                        pulvinar neque laoreet suspendisse interdum consectetur. Porta non pulvinar neque laoreet
+                        suspendisse
+                        interdum. Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Ipsum dolor sit amet
+                        consectetur.
+                        Ornare lectus sit amet est. Id diam vel quam elementum pulvinar etiam non quam. Cursus euismod
+                        quis viverra
+                        nibh cras. Massa enim nec dui nunc.</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Novedades</h2>
+                    <p>Vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt. Tortor consequat id
+                        porta nibh
+                        venenatis. Senectus et netus et malesuada. Leo urna molestie at elementum eu facilisis sed.
+                        Imperdiet dui
+                        accumsan sit amet nulla facilisi morbi tempus iaculis. Tristique risus nec feugiat in fermentum
+                        posuere urna
+                        nec tincidunt. Blandit volutpat maecenas volutpat blandit. Quis ipsum suspendisse ultrices
+                        gravida dictum
+                        fusce. Arcu odio ut sem nulla pharetra diam sit amet nisl. Mattis rhoncus urna neque viverra
+                        justo nec
+                        ultrices dui. Aenean et tortor at risus viverra adipiscing at in tellus. Viverra aliquet eget
+                        sit amet
+                        tellus cras.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/Portada Banda.png" class="imagen" alt="Portada">
+                </div>
+            </div>
+        </div>
     </main>
 
-    <section class="left">
-        <h3>Novedades</h3>
-        <p>Vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt. Tortor consequat id porta nibh
-            venenatis. Senectus et netus et malesuada. Leo urna molestie at elementum eu facilisis sed. Imperdiet dui
-            accumsan sit amet nulla facilisi morbi tempus iaculis. Tristique risus nec feugiat in fermentum posuere urna
-            nec tincidunt. Blandit volutpat maecenas volutpat blandit. Quis ipsum suspendisse ultrices gravida dictum
-            fusce. Arcu odio ut sem nulla pharetra diam sit amet nisl. Mattis rhoncus urna neque viverra justo nec
-            ultrices dui. Aenean et tortor at risus viverra adipiscing at in tellus. Viverra aliquet eget sit amet
-            tellus cras.</p>
-    </section>
-
-    <aside class="right">
-        <img src="./img/Portada Banda.png" class="imagen" alt="Portada">
-    </aside>
-
-    <footer class="footer">
-        <address>
+    <footer class="mt-auto footer">
+        <address class="container text-center">
             Puede encontrar al autor de la pagina en <a target="_blank" href="https://www.instagram.com/vickymele_/">
                 instagram</a>.<br>
             Ante cualquier consulta, por favor dirigase al <a target="_blank" href="mailto:ma.victoria.mele@gmail.com">
                 inbox</a>.<br>
         </address>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
