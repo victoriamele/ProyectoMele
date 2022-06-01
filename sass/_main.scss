@@ -1,0 +1,25 @@
+/*------estilo general------*/
+body {
+    background-color: $background;
+    font-family: 'Jost';
+    font-size: 20px;
+    color: $text;
+    text-align: justify;
+    overflow-x: hidden;
+        
+        h1 {
+            font-weight: bold;
+            font-style: italic;
+            margin: 5px;
+        }
+
+        p {
+            padding: 1%;
+        }
+}
+
+.imagen {
+    max-width: 80%;
+    height: auto;
+    margin: 10%;
+}

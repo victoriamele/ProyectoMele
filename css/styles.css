@@ -1,197 +1,142 @@
-/*---------------------------resetear CSS---------------------------*/
+/*------reset, tipografia, animacion------*/
+/*------resetear CSS------*/
 * {
-    Margin: 0;
-    padding: 0;
-}
+  Margin: 0;
+  padding: 0; }
 
-/*---------------------------plantilla de color---------------------------*/
-.DUNESCAPES-1-hex {
-    color: #5F5173;
-}
-
-.DUNESCAPES-2-hex {
-    color: #DED0F2;
-}
-
-.DUNESCAPES-3-hex {
-    color: #5E5BA6;
-}
-
-.DUNESCAPES-4-hex {
-    color: #272F59;
-}
-
-.DUNESCAPES-5-hex {
-    color: #9AA3D9;
-}
-
-/*---------------------------link a tipografia---------------------------*/
+/*------link a tipografia------*/
 @font-face {
-    font-family: "Rochestar";
-    src: url(../fonts/Rochestar.otf);
-}
+  font-family: "Exilio";
+  src: url(../fonts/Retroking.ttf); }
 
-
-/*---------------------------keyframes animaciones---------------------------*/
-
+/*------animaciones------*/
 @keyframes tracking-in-expand {
-    0% {
-        letter-spacing: -0.5em;
-        opacity: 0;
-    }
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
 
-    40% {
-        opacity: 0.6;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-/*---------------------------estilo general---------------------------*/
-
+/*------colores------*/
+/*------plantilla de color------*/
+/*------variables de colores------*/
+/*------body de todos los htmls------*/
+/*------estilo general------*/
 body {
-    background-color: #272f59;
-    font-family: 'Jost';
-    font-size: 20px;
-    color: #DED0F2;
-    text-align: justify;
-    overflow-x: hidden;
-}
-
-#logo {
-    animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.2s both;
-    font-family: 'Rochestar';
-    text-shadow: 2px 2px 4px #272F59;
-    font-size: 40px;
-}
-
-h1,
-h2 {
+  background-color: #22111c;
+  font-family: 'Jost';
+  font-size: 20px;
+  color: #f5ecda;
+  text-align: justify;
+  overflow-x: hidden; }
+  body h1 {
     font-weight: bold;
     font-style: italic;
-    margin: 5px;
-}
-
-p {
-    padding: 1%;
-}
+    margin: 5px; }
+  body p {
+    padding: 1%; }
 
 .imagen {
-    max-width: 80%;
-    height: auto;
-    margin: 10%;
-}
+  max-width: 80%;
+  height: auto;
+  margin: 10%; }
+
+/*------navegacion------*/
+/*------header------*/
+#logo {
+  animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s both;
+  font-family: 'Exilio';
+  text-shadow: 2px 2px 4px #d7bcb2;
+  font-size: 40px; }
 
 .navbar {
-    background-color: #5E5BA6;
-    text-shadow: 2px 2px 4px #272F59;
-}
-
-.navbar a {
+  background-color: #1a0203;
+  text-shadow: 2px 2px 4px #d7bcb2; }
+  .navbar a {
     text-decoration: none;
-    color: #DED0F2;
-    font-family: 'Jost'; 
+    color: #f5ecda;
+    font-family: 'Jost';
     font-size: 18px;
     padding: 12px;
     line-height: 25px;
-    border-radius: 4px;
-}
-
-.navbar a:hover {
-    background-color: #DED0F2;
-    color: #272F59;
-}
+    border-radius: 4px; }
+    .navbar a:hover {
+      background-color: rgba(154, 100, 123, 0.3);
+      color: rgba(245, 236, 218, 0.5); }
 
 .navbarActive {
-    background-color: rgba(39, 47, 89, 0.5);
-}
+  background-color: rgba(215, 188, 178, 0.1); }
 
+/*------footer------*/
+/*------footer------*/
 .footer {
-    background-color: rgba(92, 89, 166, 0.2);
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.footer a {
+  background-color: rgba(31, 0, 17, 0.2); }
+  .footer a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.5);
-    font-family: 'Jost';
-    font-size: 20px;
-}
+    color: rgba(245, 236, 218, 0.5);
+    font-size: 20px; }
 
-/*---------------------------css especifico a integrantes.html---------------------------*/
-
+/*------especifico a algunos html------*/
+/*------integrantes------*/
 .card__image {
-    width: 100%;
-    height: 50%;
-}
+  width: 100%;
+  height: 50%; }
 
 .card__title {
-    text-align: center;
-}
+  text-align: center; }
 
 .card__subtitle {
-    text-align: center;
-    font-style: italic;
-    text-decoration: overline;
-    margin-top: 5px;
-}
+  text-align: center;
+  font-style: italic;
+  text-decoration: overline;
+  margin-top: 5px; }
 
 .card__content {
-    text-align: justify;
-}
+  text-align: justify; }
 
-/*---------------------------css especifico a discografia.html---------------------------*/
-
+/*------discografia------*/
 .tabla {
-    border: 1px solid;
-    text-align: center;
-    width: 100%;
-}
+  border: 1px solid;
+  text-align: center;
+  width: 100%; }
 
 .tabla__caption {
-    font-style: italic;
-    font-size: smaller;
-    caption-side: bottom;
-}
+  font-style: italic;
+  font-size: smaller;
+  caption-side: bottom; }
 
 .tabla__titulo {
-    font-weight: bold;
-}
+  font-weight: bold; }
 
 .tabla__cuerpo {
-    background-color: rgba(95, 81, 115, 0.3);
-}
+  background-color: rgba(95, 81, 115, 0.3); }
 
-/*---------------------------css especifico a contacto.html---------------------------*/
-
+/*------contacto------*/
 input[type=text],
 input[type=email],
 input[type=checkbox],
 select,
 textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #DED0F2;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical
-}
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d7bcb2;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; }
 
 input[type=submit],
 input[type=reset] {
-    background-color: #5F5173;
-    color: #f3ebfd;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
+  background-color: #9a647b;
+  color: #d7bcb2;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
 
 .formulario {
-    border-radius: 5px;
-    padding: 20px;
-}
+  border-radius: 5px;
+  padding: 20px; }

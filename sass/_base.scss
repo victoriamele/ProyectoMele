@@ -1,0 +1,27 @@
+/*------resetear CSS------*/
+* {
+    Margin: 0;
+    padding: 0;
+}
+
+/*------link a tipografia------*/
+@font-face {
+    font-family: "Exilio";
+    src: url(../fonts/Retroking.ttf);
+}
+
+/*------animaciones------*/
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

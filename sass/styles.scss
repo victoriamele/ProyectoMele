@@ -1,0 +1,17 @@
+/*------reset, tipografia, animacion------*/
+@import "base";
+
+/*------colores------*/
+@import "variables";
+
+/*------body de todos los htmls------*/
+@import "main";
+
+/*------navegacion------*/
+@import "header";
+
+/*------footer------*/
+@import "footer";
+
+/*------especifico a algunos html------*/
+@import "layout";
