@@ -38,10 +38,10 @@ body {
   body p {
     padding: 1%; }
 
-.imagen {
-  max-width: 80%;
-  height: auto;
-  margin: 10%; }
+.cover-container {
+  max-width: 42em;
+  margin-top: 2em;
+  margin-bottom: 2em; }
 
 /*------navegacion------*/
 /*------header------*/
